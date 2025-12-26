@@ -1,0 +1,12 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DemoApp.Properties.Resources.resources
+obj\Debug\DemoApp.csproj.GenerateResource.Cache
+bin\Debug\DemoApp.exe
+bin\Debug\DemoApp.pdb
+obj\Debug\DemoApp.exe
+obj\Debug\DemoApp.pdb
+obj\Debug\DemoApp.Customers.rdlc
+obj\Debug\RdlCompile.cache
+obj\Debug\RdlCompile.compiled
+obj\Debug\DemoApp.MainForm.resources
+bin\Debug\Customers.csv

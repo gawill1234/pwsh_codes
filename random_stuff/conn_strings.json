@@ -1,0 +1,14 @@
+"ConnectionStrings": {
+   "AamsReadOnly": "data source=vaC20VNNAES810.va.gov;initial catalog=AAMS_Dev;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "AamsReadWrite": "data source=vaC20VNNAES810.va.gov;initial catalog=AAMS_Dev;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "Cad": "data source=vaC20VNNAES810.va.gov;initial catalog=Cad_Alpha800;integrated security=True;MultipleActiveResultSets=True;application name=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "ConfigDatabaseConnection": "data source=vaC20VNNAES810.va.gov;initial catalog=Cad_Alpha800;integrated security=True;MultipleActiveResultSets=True;application name=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "DocServerFileStoreReadOnly": "data source=vaC20VNNAES810.va.gov;initial catalog=DocServerFileStore;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "DocServerFileStoreReadWrite": "data source=vaC20VNNAES810.va.gov;initial catalog=DocServerFileStore;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "EpicReadOnly": "data source=vaC20VNNAES810.va.gov;initial catalog=Epic_Alpha800;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "EpicReadWrite": "data source=vaC20VNNAES810.va.gov;initial catalog=Epic_Alpha800;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "NACCMHostReadOnly": "data source=vaC20VNNAES810.va.gov;initial catalog=NAC_CM_Host;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "OASShared": "data source=vaC20VNNAES810.va.gov;initial catalog=Cad_Alpha800;integrated security=True;MultipleActiveResultSets=True;application name=OASESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "ReportDataReadOnly": "data source=vaC20VNNAES810.va.gov;initial catalog=ReportData;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True",
+   "ReportDataReadWrite": "data source=vaC20VNNAES810.va.gov;initial catalog=ReportData;integrated security=True;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=True"
+},

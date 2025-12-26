@@ -1,0 +1,7 @@
+/r:"Microsoft.ReportViewer.Design.dll"
+/r:"Microsoft.SqlServer.Types.dll"
+/r:"Microsoft.ReportViewer.WinForms.dll"
+/r:"Microsoft.ReportViewer.Common.dll"
+/r:"Microsoft.ReportViewer.ProcessingObjectModel.dll"
+/r:"Microsoft.ReportViewer.DataVisualization.dll"
+/r:"Microsoft.ReportViewer.WebForms.dll"

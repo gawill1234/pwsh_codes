@@ -1,0 +1,16 @@
+[3:06 PM] Givens, Michael R. (Sierra 7)
+
+
+    "EpicReadOnly": "Server=VAC20VNNAES810.va.gov;Database=Epic_Alpha800;User Id=EASDevBoxUser;Password=P@55w0rds01#;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True",
+
+    "EpicReadWrite": "Server=VAC20VNNAES810.va.gov;Database=Epic_Alpha800;User Id=EASDevBoxUser;Password=P@55w0rds01#;MultipleActiveResultSets=True;App=ESB;Encrypt=True;TrustServerCertificate=True",
+
+ 
+[3:06 PM] Givens, Michael R. (Sierra 7)
+
+
+    "Cad": "Server=VAC20VNNAES810.va.gov;Database=Cad_Alpha800;User Id=EASDevBoxUser;Password=P@55w0rds01#;MultipleActiveResultSets=True;application name=ESB;Encrypt=True;TrustServerCertificate=True",
+
+    "ConfigDatabaseConnection": "Server=VAC20VNNAES810.va.gov;Database=Cad_Alpha800;User Id=EASDevBoxUser;Password=P@55w0rds01#;MultipleActiveResultSets=True;application name=ESB;Encrypt=True;TrustServerCertificate=True",
+
+ 

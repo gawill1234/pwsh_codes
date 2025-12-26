@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VHABUTWILLIG\\source\\repos\\ReportsApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F9E45BA-CE51-4E24-9494-ED5E91078AF8}|ReportsApplication1.csproj|c:\\users\\vhabutwillig\\source\\repos\\reportsapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F9E45BA-CE51-4E24-9494-ED5E91078AF8}|ReportsApplication1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F9E45BA-CE51-4E24-9494-ED5E91078AF8}|ReportsApplication1.csproj|c:\\users\\vhabutwillig\\source\\repos\\reportsapplication1\\app_mem.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{2F9E45BA-CE51-4E24-9494-ED5E91078AF8}|ReportsApplication1.csproj|solutionrelative:app_mem.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F9E45BA-CE51-4E24-9494-ED5E91078AF8}|ReportsApplication1.csproj|c:\\users\\vhabutwillig\\source\\repos\\reportsapplication1\\report.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{2F9E45BA-CE51-4E24-9494-ED5E91078AF8}|ReportsApplication1.csproj|solutionrelative:report.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App_mem.rdlc [Design]",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\ReportsApplication1\\App_mem.rdlc",
+              "RelativeDocumentMoniker": "App_mem.rdlc",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\ReportsApplication1\\App_mem.rdlc [Design]",
+              "RelativeToolTip": "App_mem.rdlc [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2024-08-20T19:32:01.21Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\ReportsApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\ReportsApplication1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T19:26:03.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Report.rdlc [Design]",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\ReportsApplication1\\Report.rdlc",
+              "RelativeDocumentMoniker": "Report.rdlc",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\ReportsApplication1\\Report.rdlc [Design]",
+              "RelativeToolTip": "Report.rdlc [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2024-08-20T19:25:02.347Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

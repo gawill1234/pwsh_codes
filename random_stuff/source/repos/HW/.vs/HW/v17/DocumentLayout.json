@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|HW||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|c:\\users\\vhabutwillig\\source\\repos\\hw\\demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|solutionrelative:demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|solutionrelative:demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VHABUTWILLIG\\AppData\\Local\\Temp\\1\\.vsdbgsrc\\9b1c4965f4a257075b18f048692a7c960f5a36a7330c234f5602855e9e3c0170\\Application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\report1.rdl||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|solutionrelative:report1.rdl||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\report1.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}|XML",
+      "RelativeMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|solutionrelative:report1.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}|XML"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\report1.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|solutionrelative:report1.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2165E393-619E-4C42-AE3B-A8E32911EC0E}|HW.csproj|c:\\users\\vhabutwillig\\source\\repos\\hw\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 144,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\AppData\\Local\\Temp\\1\\.vsdbgsrc\\9b1c4965f4a257075b18f048692a7c960f5a36a7330c234f5602855e9e3c0170\\Application.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\1\\.vsdbgsrc\\9b1c4965f4a257075b18f048692a7c960f5a36a7330c234f5602855e9e3c0170\\Application.cs",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\AppData\\Local\\Temp\\1\\.vsdbgsrc\\9b1c4965f4a257075b18f048692a7c960f5a36a7330c234f5602855e9e3c0170\\Application.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\1\\.vsdbgsrc\\9b1c4965f4a257075b18f048692a7c960f5a36a7330c234f5602855e9e3c0170\\Application.cs [Read Only]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T15:20:12.678Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Demo.cs",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Demo.cs",
+              "RelativeDocumentMoniker": "Demo.cs",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Demo.cs",
+              "RelativeToolTip": "Demo.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAjwBkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:28:02.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HW",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\HW.csproj",
+              "RelativeDocumentMoniker": "HW.csproj",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\HW.csproj",
+              "RelativeToolTip": "HW.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-22T16:35:40.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Report1.rdlc [XML]",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Report1.rdlc",
+              "RelativeDocumentMoniker": "Report1.rdlc",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Report1.rdlc [XML]",
+              "RelativeToolTip": "Report1.rdlc [XML]",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2024-08-22T14:32:05.286Z",
+              "EditorCaption": " [XML]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Report1.rdlc [Design]",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Report1.rdlc",
+              "RelativeDocumentMoniker": "Report1.rdlc",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Report1.rdlc [Design]",
+              "RelativeToolTip": "Report1.rdlc [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2024-08-22T15:03:13.536Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Report1.rdl",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Report1.rdl",
+              "RelativeDocumentMoniker": "Report1.rdl",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Report1.rdl",
+              "RelativeToolTip": "Report1.rdl",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-22T14:26:07.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Demo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Demo.cs",
+              "RelativeDocumentMoniker": "Demo.cs",
+              "ToolTip": "C:\\Users\\VHABUTWILLIG\\source\\repos\\HW\\Demo.cs [Design]",
+              "RelativeToolTip": "Demo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:06:04.072Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

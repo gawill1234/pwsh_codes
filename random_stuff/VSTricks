@@ -1,0 +1,74 @@
+Stack trace:  ctrl+alt+c
+bp on all methods in a class:  ctrl+k,b(no ctrl), function box to classname::*, language,ok
+
+
+SHOW Call hierarchy: select method/property/constructor and choose View Call Hierarchy shortcut
+
+
+
+VS Macro to add bp to every method every where(not yet tested):
+To get this script to work in VS 2012 you can copy in the functions into a new Addin project and call "BreakAtEveryFunction" inside the "OnConnection" method of the Addin project. The script is a bit too comprehensive in that it does .NET methods, also has errors here and there, the Addin project will complain about "DTE.Debugger" and "DTE.Solution.Projects", change "DTE" to "_applicationObject". For more about the Addin project see This https://stackoverflow.com/questions/12027485/alternative-to-macros-in-visual-studio-2012/12394986#12394986
+#####################################################
+Sub BreakAtEveryFunction()
+    #For Each project In DTE.Solution.Projects
+    #    SetBreakpointOnEveryFunction(project)
+    #Next project
+    For Each project In _applicationObject.Solution.Projects
+        SetBreakpointOnEveryFunction(project)
+    Next project
+End Sub
+
+
+' Macro editor
+Sub SetBreakpointOnEveryFunction(ByVal project As Project)
+    Dim cm = project.CodeModel
+
+    ' Look for all the namespaces and classes in the 
+    ' project.
+    Dim list As List(Of CodeFunction)
+    list = New List(Of CodeFunction)
+    Dim ce As CodeElement
+    For Each ce In cm.CodeElements
+        If (TypeOf ce Is CodeNamespace) Or (TypeOf ce Is CodeClass) Then
+            ' Determine whether that namespace or class 
+            ' contains other classes.
+            GetClass(ce, list)
+        End If
+    Next
+
+    For Each cf As CodeFunction In list
+
+        DTE.Debugger.Breakpoints.Add(cf.FullName)
+    Next
+
+End Sub
+
+Sub GetClass(ByVal ct As CodeElement, ByRef list As List(Of CodeFunction))
+
+    ' Determine whether there are nested namespaces or classes that 
+    ' might contain other classes.
+    Dim aspace As CodeNamespace
+    Dim ce As CodeElement
+    Dim cn As CodeNamespace
+    Dim cc As CodeClass
+    Dim elements As CodeElements
+    If (TypeOf ct Is CodeNamespace) Then
+        cn = CType(ct, CodeNamespace)
+        elements = cn.Members
+    Else
+        cc = CType(ct, CodeClass)
+        elements = cc.Members
+    End If
+    Try
+        For Each ce In elements
+            If (TypeOf ce Is CodeNamespace) Or (TypeOf ce Is CodeClass) Then
+                GetClass(ce, list)
+            End If
+            If (TypeOf ce Is CodeFunction) Then
+                list.Add(ce)
+            End If
+        Next
+    Catch
+    End Try
+End Sub
+#####################################################

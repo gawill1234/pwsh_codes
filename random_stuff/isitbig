@@ -1,0 +1,23 @@
+This may, actually, be kind of obvious to you.  But I have found that sometimes the apparently obvious should be pointed out.  Or at least reinforced.
+
+How much does the code touch?
+   If it's one line or 1000 lines, if the code touches several aspects of the application or multiple applications, it's big.  So, say you have a one line change.  But it impacts every route or application, then it's big.
+
+How much code is there?
+   A lot of code generally means it's big.  But, there are exceptions.  There are 2 kinds of big.  Big, as in this application has major changes and must be thoroughly tested.  And big as in this application has major changes and impacts other applications.  So, both are "big", but the second is bigger.  The most obvious factor in determining size.
+
+How much data goes through the code?
+   Again, 2 types of sizing.  If all of the data is always the same type, and all other data is rejected, that's not terribly big.  But, if all kinds of data goes through the code, it is big.  The added factor here is also that you need to define what different data types are.  To me, the least obvious aspect trying to size the testing size.
+
+And one more less obvious selection:
+How disconnected are the changes.
+   I.e., it is seemingly one application.  But the code changes to properly affect the change are scattered about the code base.  In this case, there is generally no such thing as small.  The application needs to be thoroughly tested.
+   Even if the changes are small, if the fixes cross applications, I generally assume nothing less than "high medium".  You've now changed multiple applications where the code may have more uses than what you are remembering.
+
+How many features are we looking at.
+   Each feature should be examined individually according to the above criteria.
+
+How many bug fixes are we looking at.
+   Each fix should be examined individually according to the above criteria.
+
+Just the stuff that goes through my head when my testing hat is on.

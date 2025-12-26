@@ -1,0 +1,21 @@
+To install git on your GFE.
+On a command prompt:
+run:
+winget install --id Git.Git -a --source winget --scope user
+
+On a command prompt or a cygwin window:
+run:
+ssh-keygen -t rsa
+
+Put resulting key in azure(see below).
+
+run:
+git config --global http.sslBackend schannel
+
+
+Also, take the id_rsa.pub and copy to Azure.
+
+The ssh-keygen will create a .ssh directory off of
+your home directory.  Cat contents of id_rsa.pub.
+Then copy it int the ssh keys on Azure.
+

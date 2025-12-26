@@ -1,0 +1,6 @@
+The mass assignment is not an issue for the following reasons:
+  The data uses a DTO which includes only the fields needed for an operation.
+  The user data (target) is verified against existing database values.
+  The user data (performing action) is validated against database values.
+  The user data (performing action) is validated against the users roles to
+  assure that the user is allowed to perform that action.

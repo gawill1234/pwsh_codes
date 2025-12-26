@@ -1,0 +1,31 @@
+Do they still have an ElasticSearch server "just in case"?
+
+Is Tririga still the user portal to Epic/TOMS?
+How do you use it (Tririga)?
+How current is it?
+Can it be updated?
+Is it current in production?
+Do we have e-Buy somewhere?
+===  End Tririga questions
+
+Does EpicWebService talk to Tririga?
+A:  yes it does.  EpicWebService originates communication with Tririga.
+    See BaseOrderData.cs and BaseOrder_AAMS.cs
+    To properly test EpicWebService, you need Tririga.
+
+Can we kill the remainder of VoA (internal and external) to leave
+only ATOMS?
+
+Has it been determined that message queueing is definitively not used?
+
+Is SSRS still being replaced?  (PowerBI, I think?)
+
+Does EPIC replace TOMS or are the terms simply interchangeable when
+referring to a certain group of functions?
+
+If there is a training environment set up for trainers/students, are
+there training documents available as well?
+Can we use those documents?
+
+Tririga is from IBM
+iFams is CGI Momentum

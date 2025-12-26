@@ -1,0 +1,5 @@
+C:\Users\VHABUTWILLIG\mine\cscstuff\RdlcProject\obj\Debug\net8.0\RdlcProject.csproj.AssemblyReference.cache
+C:\Users\VHABUTWILLIG\mine\cscstuff\RdlcProject\obj\Debug\net8.0\RdlcProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VHABUTWILLIG\mine\cscstuff\RdlcProject\obj\Debug\net8.0\RdlcProject.AssemblyInfoInputs.cache
+C:\Users\VHABUTWILLIG\mine\cscstuff\RdlcProject\obj\Debug\net8.0\RdlcProject.AssemblyInfo.cs
+C:\Users\VHABUTWILLIG\mine\cscstuff\RdlcProject\obj\Debug\net8.0\RdlcProject.csproj.CoreCompileInputs.cache

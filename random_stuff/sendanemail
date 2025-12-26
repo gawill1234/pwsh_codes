@@ -1,0 +1,29 @@
+Send an email (probable infrastructure issue)
+
+Saving to the Epic database (PR)
+Failure to retrieve from database (connection error)
+Failure to retrieve from database (ROF records)
+Failure submitting to AAMS
+Failure to update award status (AAMS)
+Failure to save award document
+mCMIS error/exception
+Partial failures (insert db worked, document save failed)
+Failed IFCAP connection
+Failure to log comment (AAMS)
+Failure to save attachments
+Any unknown/uncaught error (final catchall)
+
+
+
+Error, but no email (standard error)
+
+Multiple entries for given data
+Missing data
+Item does not exist
+Duplicate entry
+Document not found
+Action(save, delete, update, etc) failed (but target app responds with
+   appropriate error code, not an EpicWebService issue)
+Required data missing
+Expected entries are wrong in some way (too many, too few, wrong data)
+Unexpected data returned(bad format, Null, bad type)

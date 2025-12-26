@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="NorthwindConnectionString">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:DataSourceID>fb63dc86-61af-4ced-8141-7883d252416f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <BottomMargin>1in</BottomMargin>
+  <rd:ReportID>aa1b6b0d-5687-4225-bded-3277a17ef139</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet1_Orders">
+      <Fields>
+        <Field Name="OrderID">
+          <DataField>OrderID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OrderDate">
+          <DataField>OrderDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RequiredDate">
+          <DataField>RequiredDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ShippedDate">
+          <DataField>ShippedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ShipVia">
+          <DataField>ShipVia</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Freight">
+          <DataField>Freight</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ShipName">
+          <DataField>ShipName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipAddress">
+          <DataField>ShipAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipCity">
+          <DataField>ShipCity</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipRegion">
+          <DataField>ShipRegion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipPostalCode">
+          <DataField>ShipPostalCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipCountry">
+          <DataField>ShipCountry</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ContactName">
+          <DataField>ContactName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ContactTitle">
+          <DataField>ContactTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Region">
+          <DataField>Region</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PostalCode">
+          <DataField>PostalCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Country">
+          <DataField>Country</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Phone">
+          <DataField>Phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fax">
+          <DataField>Fax</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>NorthwindConnectionString</DataSourceName>
+        <CommandText>SELECT     Orders.OrderID, Orders.OrderDate, Orders.RequiredDate, Orders.ShippedDate, Orders.ShipVia, Orders.Freight, Orders.ShipName, Orders.ShipAddress, 
+                      Orders.ShipCity, Orders.ShipRegion, Orders.ShipPostalCode, Orders.ShipCountry, Customers.CompanyName, Customers.ContactName, 
+                      Customers.ContactTitle, Customers.Address, Customers.City, Customers.Region, Customers.PostalCode, Customers.Country, Customers.Phone, 
+                      Customers.Fax
+FROM         Orders INNER JOIN
+                      Customers ON Orders.CustomerID = Customers.CustomerID</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:TableAdapterName>OrdersTableAdapter</rd:TableAdapterName>
+        <rd:TableName>Orders</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>6.5in</Width>
+  <Body>
+    <ReportItems>
+      <List Name="list1">
+        <Grouping Name="list1_Details_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!OrderID.Value</GroupExpression>
+          </GroupExpressions>
+          <PageBreakAtEnd>true</PageBreakAtEnd>
+        </Grouping>
+        <DataSetName>DataSet1_Orders</DataSetName>
+        <ReportItems>
+          <Subreport Name="subreport1">
+            <Width>6.25in</Width>
+            <Parameters>
+              <Parameter Name="OrderID">
+                <Value>=Fields!OrderID.Value</Value>
+              </Parameter>
+            </Parameters>
+            <Top>2.75in</Top>
+            <ReportName>OrderDetails</ReportName>
+            <Style />
+            <ZIndex>18</ZIndex>
+            <Height>2in</Height>
+            <Left>0.125in</Left>
+          </Subreport>
+          <Textbox Name="textbox5">
+            <Width>1.5in</Width>
+            <rd:DefaultName>textbox5</rd:DefaultName>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontSize>18pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>17</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.375in</Height>
+            <Value>Invoice</Value>
+            <Left>2.375in</Left>
+          </Textbox>
+          <Textbox Name="ShipCountry">
+            <Width>2in</Width>
+            <rd:DefaultName>ShipCountry</rd:DefaultName>
+            <Top>1.75in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!ShipCountry.Value</Value>
+            <Left>4in</Left>
+          </Textbox>
+          <Textbox Name="ShipCity">
+            <Width>2in</Width>
+            <rd:DefaultName>ShipCity</rd:DefaultName>
+            <Top>1.5in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!ShipCity.Value</Value>
+            <Left>4in</Left>
+          </Textbox>
+          <Textbox Name="ShipAddress">
+            <Width>2in</Width>
+            <rd:DefaultName>ShipAddress</rd:DefaultName>
+            <Top>1.25in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!ShipAddress.Value</Value>
+            <Left>4in</Left>
+          </Textbox>
+          <Textbox Name="ShipName">
+            <Width>2in</Width>
+            <rd:DefaultName>ShipName</rd:DefaultName>
+            <Top>1in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!ShipName.Value</Value>
+            <Left>4in</Left>
+          </Textbox>
+          <Textbox Name="textbox4">
+            <Width>0.75in</Width>
+            <rd:DefaultName>textbox4</rd:DefaultName>
+            <Top>1in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>Ship to:</Value>
+            <Left>3.25in</Left>
+          </Textbox>
+          <Textbox Name="Country">
+            <Width>1.875in</Width>
+            <rd:DefaultName>Country</rd:DefaultName>
+            <Top>2.25in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!Country.Value</Value>
+            <Left>0.875in</Left>
+          </Textbox>
+          <Textbox Name="City">
+            <Width>1.875in</Width>
+            <rd:DefaultName>City</rd:DefaultName>
+            <Top>2in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!City.Value</Value>
+            <Left>0.875in</Left>
+          </Textbox>
+          <Textbox Name="Address">
+            <Width>1.875in</Width>
+            <rd:DefaultName>Address</rd:DefaultName>
+            <Top>1.75in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!Address.Value</Value>
+            <Left>0.875in</Left>
+          </Textbox>
+          <Textbox Name="CompanyName">
+            <Width>1.875in</Width>
+            <rd:DefaultName>CompanyName</rd:DefaultName>
+            <Top>1.5in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!CompanyName.Value</Value>
+            <Left>0.875in</Left>
+          </Textbox>
+          <Textbox Name="ContactTitle">
+            <Width>1.875in</Width>
+            <rd:DefaultName>ContactTitle</rd:DefaultName>
+            <Top>1.25in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!ContactTitle.Value</Value>
+            <Left>0.875in</Left>
+          </Textbox>
+          <Textbox Name="ContactName">
+            <Width>1.875in</Width>
+            <rd:DefaultName>ContactName</rd:DefaultName>
+            <Top>1in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!ContactName.Value</Value>
+            <Left>0.875in</Left>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Width>0.5in</Width>
+            <rd:DefaultName>textbox3</rd:DefaultName>
+            <Top>1in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>Bill to:</Value>
+            <Left>0.375in</Left>
+          </Textbox>
+          <Textbox Name="OrderDate">
+            <Width>1.875in</Width>
+            <rd:DefaultName>OrderDate</rd:DefaultName>
+            <Top>0.5in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <TextAlign>Left</TextAlign>
+              <Format>d</Format>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=DateTime.Parse(Fields!OrderDate.Value)</Value>
+            <Left>4in</Left>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <Width>0.875in</Width>
+            <rd:DefaultName>textbox2</rd:DefaultName>
+            <Top>0.5in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>Order Date:</Value>
+            <Left>3.125in</Left>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <Width>0.875in</Width>
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>0.5in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>Order ID:</Value>
+          </Textbox>
+          <Textbox Name="OrderID">
+            <Width>1.25in</Width>
+            <rd:DefaultName>OrderID</rd:DefaultName>
+            <Top>0.5in</Top>
+            <Style>
+              <PaddingBottom>2pt</PaddingBottom>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!OrderID.Value</Value>
+            <Left>0.875in</Left>
+          </Textbox>
+          <Rectangle Name="rectangle1">
+            <ReportItems>
+              <Line Name="line1">
+                <Width>0in</Width>
+                <Style>
+                  <BorderStyle>
+                    <Default>Solid</Default>
+                  </BorderStyle>
+                </Style>
+                <Left>2.875in</Left>
+              </Line>
+            </ReportItems>
+            <Top>0.875in</Top>
+            <Width>6in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <Left>0.125in</Left>
+            <Height>1.75in</Height>
+          </Rectangle>
+        </ReportItems>
+        <Style />
+        <Height>4.875in</Height>
+      </List>
+    </ReportItems>
+    <Height>5in</Height>
+    <Style />
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

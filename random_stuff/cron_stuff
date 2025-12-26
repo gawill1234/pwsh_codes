@@ -1,0 +1,4 @@
+
+minute hours day-of-month month day-of-week <command>
+*/30 9-17 * * 1-5 <command>
+Should be every 30 minutes, from 9 to 5, Monday thru Friday

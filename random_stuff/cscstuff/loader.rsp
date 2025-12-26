@@ -1,0 +1,10 @@
+/lib:"c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.Common.10.0.40219.1\lib"
+/lib:"c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40"
+/lib:"c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib"
+/lib:"c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib"
+/lib:"c:\USERS\VHABUTWILLIG\lib\Microsoft.Report.Viewer.11.0.0.0\lib\net"
+/lib:"c:\USERS\VHABUTWILLIG\lib\System.Windows.Forms.4.0.0.0\lib"
+/r:Microsoft.ReportViewer.WinForms.dll
+/r:Microsoft.ReportViewer.WebForms.dll
+/r:Microsoft.ReportViewer.Common.dll
+/r:System.Windows.Forms.dll

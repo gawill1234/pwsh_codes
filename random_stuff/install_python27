@@ -1,0 +1,3 @@
+Get the proper .msi file from python downloads page.
+Run:
+msiexec /a python-2.7.10.msi(proper msi file) /qb TARGETDIR=C:\python27

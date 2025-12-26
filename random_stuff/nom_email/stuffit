@@ -1,0 +1,15 @@
+SqlCommand command;
+SqlDataReader dataReader;
+String sql, Output;
+
+   sql = "Select blah from db";
+   command = new SqlCommand(sql, cnn);
+   dataReader = command.ExecuteReader();
+
+   while (dataReader.Read()) {
+      Console.Writeln(dataReader.GetValue(0), dataReader.GetValue(1));
+   }
+
+   dateReader.Close();
+   Command.Dispose();
+

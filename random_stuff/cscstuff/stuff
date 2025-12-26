@@ -1,0 +1,7 @@
+export MYLIBS="c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll"
+#export LIBDIR="c:\USERS\VHABUTWILLIG\lib"
+export LIBDIR="c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.Common.10.0.40219.1\lib;c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40;c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib"
+export LIBDIR1="c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.Common.10.0.40219.1\lib"
+export LIBDIR2="c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40"
+export LIBDIR3="c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib"
+export LIBDIR4="c:\USERS\VHABUTWILLIG\lib\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib"

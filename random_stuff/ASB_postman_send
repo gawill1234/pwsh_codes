@@ -1,0 +1,7 @@
+"http://localhost:65507/api/ActiveDirectoryUser.v17-01" with your port.
+
+On the Authorization tab, select basic auth and do 
+user: access1 
+pass: access1@va.eas.gov
+Then on Params tab, enter "Terms" for the key and your email for the value.
+gary.williams1@va.gov (for me)

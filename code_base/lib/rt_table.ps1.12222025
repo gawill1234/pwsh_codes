@@ -1,0 +1,526 @@
+$Global:table = @()
+$Global:mymax = 125
+
+function setRouteTable {
+
+   $idval = 0
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Force/FormModel.v17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Force/FormModel.v17-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Force/ActiveContractingOfficeID'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Force/FormModel.v17-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Aams.v17-01/Artifacts(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Aams.v17-01/Artifacts'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Admin/Jobs/History/Summary.V17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Admin/Jobs/History.v17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/ActiveDirectoryUser.v17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/MSGraphUser.v17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/ActiveDirectoryUser.v17-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/ActiveDirectoryUser.v17-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/NominationsCount.v19-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/InitializeMassNomination.v19-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Groups.v19-01'; SetFunction = 'ASIS'; Method = 'GET, POST, DELETE, PUT'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Groups.v19-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET, POST, DELETE, PUT'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/DocumentTasks.v19-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/User/(ENTRY1)/DocumentTasks.v19-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Search/Appointments.v19-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Configuration/RequiredDocuments.v19-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Appointments.v19-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Appointments.v19-01/(ENTRY1)/History'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Appointments.v19-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Nominations/(ENTRY1)/History.v19-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Nominations.v19-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Contract/(ENTRY1)/Nominations.v19-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Contract/Nominations.v19-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Contracts/(ENTRY1)/Appointments.v19-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Contracts/Appointments.v19-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Indices.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET, POST, DELETE'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Issues.v19-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/FilesInitialize.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/User/(ENTRY1)/Files.v19-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Files/(ENTRY1)/Tasks.v18-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Files/(ENTRY1)/Users.v18-01(ENTRY2_TAIL)'; SetFunction = 'SetTwoEntry'; Method = 'GET, POST, DELETE'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Files.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Reports.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Search/Users.v18-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Users.v18-01/Entra(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Users.v18-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECERT/User/(ENTRY1)/Accreditations.v19-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECERT/Accreditations.v19-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/System/Users.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET, POST, DELETE'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Stations/(ENTRY1)/Locations.v18-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Stations.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET, POST, DELETE, PUT'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/NotificationTemplates.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/NotificationTemplates.v18-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Reports.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Reports.v18-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Organizations.v18-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Organizations.v18-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Locations/(ENTRY1)/Stations.v18-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Locations.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET, POST, DELETE, PUT'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Categories.v18-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/StationLocationPairs.v18-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Users.v18-01'; SetFunction = 'ASIS'; Method = 'GET, POST'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Contracts/ActiveAwards/AwardedBetween.V20-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Contracts/ActiveAwards.V20-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Contracts/ByProject.V18-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Contracts/LineItems/IDVLineItems.V18-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Interface/Contracts/LifecycleExtended.V25-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Contracts.v16-02/(ENTRY1)/Conformed(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/AssignmentCoordinatorsByOrg(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/ContractOfficeUsersByOrg(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/AwardType.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/ClassificationCode.v16-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/FpdsContractingOfficeCode.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/FpdsExtentCompeted.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/FpdsIdcType.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/FpdsIdvType.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/FpdsReasonForModification.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/NaicsCode/Planning.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/NaicsCode.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/ReviewAssessment/Planning.v17-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/ReviewAssessment.v17-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Organizations.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Organizations/(ENTRY1)/ApplicationFeatures.v17-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Requirements.v17-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Requirements/(ENTRY1)/DataHistory'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Requirements/SubmissionStatuses/AssignmentCoordinatorChanges.v17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Requirements/SubmissionStatuses/AcquisitionPOCChanges.v17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Requirements/SubmissionStatuses/ProgramOfficeUserChanges.v17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Requirements/(ENTRY1)/SubmissionStatuses/MostRecent.v16-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Requirements/(ENTRY1)/SubmissionStatuses.v16-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/eCMSVersion.v17-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/ErrorCodeList.v19-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Core/DistributionLists/BySystem.V17-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Vendors/VendorInfo.v21-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Vendors/VendorInfo.v21-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Vendors/VendorStatus(PARAM1)'; SetFunction = 'SetParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/UserRole.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Planning/Requirements/Operations/Documents.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Requirements/Fcos.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Documents/(ENTRY1)/Artifacts(ENTRY2_TAIL)'; SetFunction = 'SetTwoEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Documents/(ENTRY1)/Artifacts/(ENTRY2)/Version(ENTRY3_TAIL)'; SetFunction = 'SetThreeEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Enums.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET, POST, DELETE, PUT'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Files/(ENTRY1)/Documents.v18-01'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Version.v17-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Preferences/History.v18-01'; SetFunction = 'ASIS'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/ECOR/Preferences.v18-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET, POST, PUT'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Contracts.v16-01/ByObligation(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Contracts/ByObligation.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/admin/caches/health.v17-01'; SetFunction = 'ASIS'; Method = 'NOT DONE, POST'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/admin/caches.v17-01'; SetFunction = 'ASIS'; Method = 'NOT DONE, DELETE'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/ArtifactPreAwardIndicator.v16-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/EmailAddressType.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/ProcurementInstrument.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/RoleType.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/SubmissionStatus.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/UserType.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/Year.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/YesNoAnswer.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/ProcurementInstrumentGroup.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/RequirementArtifactType.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Lists/RoleGroup.v16-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Authorizations.v19-01(ENTRY1_TAIL)(PARAM1)'; SetFunction = 'SetEntryParam'; Method = 'NOT DONE, GET, POST, PUT, DELETE'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Authorizations/(ENTRY1)/History.v19-01'; SetFunction = 'SetEntry'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Contracts.v19-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'NOT DONE, GET, PUT'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Contracts/(ENTRY1)/Announcements.v19-01'; SetFunction = 'SetEntry'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Contracts/(ENTRY1)/History.v19-01'; SetFunction = 'SetEntry'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/OOD/Reports.v19-01(ENTRY1_TAIL)'; SetFunction = 'SetEntry'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Users/ByEmailAddress.v17-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Users/ByOrgAndRole.v16-01(PARAM1)'; SetFunction = 'SetParam'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Users/Current.v16-01'; SetFunction = 'ASIS'; Method = 'NOT DONE, GET'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/Organizations/(ENTRY1)/ExtendedFieldOptions.v17-01'; SetFunction = 'SetEntry'; Method = 'NOT DONE, GET, ID 820 works'}
+   $idval += 1
+   $Global:table += [pscustomobject]@{ ID = $idval; Route = '/OAS/Users/(ENTRY1)/Organizations.v18-01(ENTRY2_TAIL)'; SetFunction = 'SetTwoEntry'; Method = 'NOT DONE, ID 91477 works for GET ONLY, GET, POST, PUT, DELETE'}
+}
+
+function SetParam {
+   param ($route, $param = "")
+
+   # Write-Host "In SetParam" -f DarkYellow
+
+   if ($param -ne "") {
+      $param = "?" + $param
+      $route = $route.Replace('(PARAM1)', $param)
+   } else {
+      $route = $route.Replace('(PARAM1)', "")
+   }
+
+   return $route
+}
+
+function SetEntry {
+   param ($route, $entry = "")
+
+   # Write-Host "In SetEntry" -f DarkYellow
+
+   if ($entry -ne "") {
+      if ($route.Contains("ENTRY1_TAIL")) {
+         $entry = "/" + $entry
+         $route = $route.Replace('(ENTRY1_TAIL)', $entry)
+      } else {
+         $route = $route.Replace('(ENTRY1)', $entry)
+      }
+   } else {
+      $route = $route.Replace('(ENTRY1_TAIL)', "")
+      $route = $route.Replace('(ENTRY1)', "")
+   }
+
+   return $route
+}
+
+function SetEntryParam {
+   param ($route, $entry = "", $param = "")
+
+   # Write-Host "In SetEntry" -f DarkYellow
+   if ($entry -ne "") {
+      if ($route.Contains("ENTRY1_TAIL")) {
+         $entry = "/" + $entry
+         $route = $route.Replace('(ENTRY1_TAIL)', $entry)
+      } else {
+         $route = $route.Replace('(ENTRY1)', $entry)
+      }
+   } else {
+      $route = $route.Replace('(ENTRY1_TAIL)', "")
+      $route = $route.Replace('(ENTRY1)', "")
+   }
+   if ($param -ne "") {
+      $param = "?" + $param
+      $route = $route.Replace('(PARAM1)', $param)
+   } else {
+      $route = $route.Replace('(PARAM1)', "")
+   }
+
+   return $route
+}
+
+function SetTwoEntry {
+   param ($route, $entry = "", $entry2 = "")
+
+   #Write-Host "entry = "$entry -f Red
+   #Write-Host "entry2 = "$entry2 -f Red
+
+   # Write-Host "In SetTwoEntry" -f DarkYellow
+   if ($entry -ne "") {
+      if ($route.Contains("ENTRY1_TAIL")) {
+         $entry = "/" + $entry
+         $route = $route.Replace('(ENTRY1_TAIL)', $entry)
+      } else {
+         $route = $route.Replace('(ENTRY1)', $entry)
+      }
+   } else {
+      $route = $route.Replace('(ENTRY1_TAIL)', "")
+      $route = $route.Replace('(ENTRY1)', "")
+   }
+   if ($entry2 -ne "") {
+      if ($route.Contains("ENTRY2_TAIL")) {
+         $entry2 = "/" + $entry2
+         $route = $route.Replace('(ENTRY2_TAIL)', $entry2)
+      } else {
+         $route = $route.Replace('(ENTRY2)', $entry2)
+      }
+   } else {
+      $route = $route.Replace('(ENTRY2_TAIL)', "")
+      $route = $route.Replace('(ENTRY2)', "")
+   }
+
+   return $route
+}
+
+function SetThreeEntry {
+   param ($route, $entry = "", $entry2 = "", $entry3 = "")
+
+   if ($entry -ne "") {
+      if ($route.Contains("ENTRY1_TAIL")) {
+         $entry = "/" + $entry
+         $route = $route.Replace('(ENTRY1_TAIL)', $entry)
+      } else {
+         $route = $route.Replace('(ENTRY1)', $entry)
+      }
+   } else {
+      $route = $route.Replace('(ENTRY1_TAIL)', "")
+      $route = $route.Replace('(ENTRY1)', "")
+   }
+   if ($entry2 -ne "") {
+      if ($route.Contains("ENTRY2_TAIL")) {
+         $entry2 = "/" + $entry2
+         $route = $route.Replace('(ENTRY2_TAIL)', $entry2)
+      } else {
+         $route = $route.Replace('(ENTRY2)', $entry2)
+      }
+   } else {
+      $route = $route.Replace('(ENTRY2_TAIL)', "")
+      $route = $route.Replace('(ENTRY2)', "")
+   }
+
+   if ($entry3 -ne "") {
+      if ($route.Contains("ENTRY3_TAIL")) {
+         $entry3 = "/" + $entry3
+         $route = $route.Replace('(ENTRY3_TAIL)', $entry3)
+      } else {
+         $route = $route.Replace('(ENTRY3)', $entry3)
+      }
+   } else {
+      $route = $route.Replace('(ENTRY3_TAIL)', "")
+      $route = $route.Replace('(ENTRY3)', "")
+   }
+   return $route
+}
+
+function findRouteItem {
+   param ($Item, $routeId)
+
+   # Write-Host "$routeId" -f Red
+
+   if ($routeId -gt $Global:mymax) {
+      Write-Host "Route ID does not exist (too high)" -f Red
+      return ""
+   }
+   if ($routeId -lt 0) {
+      Write-Host "Route ID does not exist (too low)" -f Red
+      return ""
+   }
+
+   # Write-Host $Global:table[$routeId].$Item
+
+   return $Global:table[$routeId].$Item
+}
+
+function findRouteById {
+   param ($routeId)
+
+   return findRouteItem -Item "Route" -routeId $routeId
+}
+
+function dumpTable {
+
+   setRouteTable
+   $Global:table | Format-Table
+}
+
+function getIdByRouteString {
+   param ($routeString)
+
+   setRouteTable
+
+   $curval = 0
+   while ($curval -le $Global:mymax) {
+      $thing = $Global:table[$curval].Route
+      if ($thing.ToLower() -eq $routeString.ToLower()) {
+         return $Global:table[$curval].ID
+      }
+      $curval += 1
+   }
+
+   return -1
+}
+
+function findIdByRouteString {
+   param ($routeString)
+
+
+   $idval = getIdByRouteString -routeString $routeString
+   Write-Host "Id for" $routeString "is" $idval
+
+}
+
+function findSimilarRoute {
+   param ($routeString)
+
+   setRouteTable
+
+   $curval = 0
+
+   while ($curval -le $Global:mymax) {
+      $mine = $routeString.ToLower()
+      $tabbed = $Global:table[$curval].Route.ToLower()
+      if ($tabbed.Contains($mine)) {
+         Write-Host "$($Global:table[$curval].ID), $($Global:table[$curval].Route), $($Global:table[$curval].Method)"
+      }
+      $curval += 1
+   }
+}
+
+function findRouteFunctionById {
+   param ($routeId)
+
+   return findRouteItem -Item "SetFunction" -routeId $routeId
+}
+
+function route_by_id {
+   param ($routeId, $query = "", $query2 = "", $query3 = "", $params = "")
+
+   setRouteTable
+
+   #Write-Host "query = "$query -f Red
+   #Write-Host "query2 = "$query2 -f Red
+
+   $route = findRouteById -routeId $routeId
+   $func = findRouteFunctionById -routeId $routeId
+   # Write-Host $route -f magenta
+
+   switch ($func) {
+      "SetParam" {
+         if ($params -ne "") {
+            $newRoute = SetParam -route $route -param $params
+         } elseif ($query -ne "") {
+            $newRoute = SetParam -route $route -param $query
+         } else {
+            #Write-Host "No parameter specified.  Use -query <args> or -params <args>" -f Red
+            #Write-Host "args should look like: something=somevalue&anotherthing=anothervalue" -f Red
+            #Write-Host "Use the addArguments() function to create the <args>" -f Red
+            $newRoute = SetParam -route $route -param $query
+         }
+      }
+      "SetEntry" {
+         $newRoute = SetEntry -route $route -entry $query
+      }
+      "SetTwoEntry" {
+         $newRoute = SetTwoEntry -route $route -entry $query -entry2 $query2
+      }
+      "SetThreeEntry" {
+         $newRoute = SetThreeEntry -route $route -entry $query -entry2 $query2 -entry3 $query3
+      }
+      "SetEntryParam" {
+         if ($params -ne "") {
+            $newRoute = SetEntryParam -route $route -entry $query -param $params
+         } elseif ($query2 -ne "") {
+            $newRoute = SetEntryParam -route $route -entry $query -param $query2
+         } else {
+            #Write-Host "No parameter specified.  Use -query2 <args> or -params <args>" -f Red
+            #Write-Host "args should look like: something=somevalue&anotherthing=anothervalue" -f Red
+            #Write-Host "Use the addArguments() function to create the <args>" -f Red
+            $newRoute = SetEntryParam -route $route -entry $query -param $query2
+         }
+      }
+      default {
+         $newRoute = $route
+         # Write-Host "Is ASIS" -f DarkYellow
+      }
+   }
+
+   return $newRoute
+}

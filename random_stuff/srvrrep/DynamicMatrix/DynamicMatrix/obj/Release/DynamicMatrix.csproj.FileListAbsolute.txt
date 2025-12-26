@@ -1,0 +1,6 @@
+C:\Users\VHABUTWILLIG\mine\srvrrep\DynamicMatrix\DynamicMatrix\obj\Release\DynamicMatrix.csproj.AssemblyReference.cache
+C:\Users\VHABUTWILLIG\mine\srvrrep\DynamicMatrix\DynamicMatrix\obj\Release\DynamicMatrix.Form1.resources
+C:\Users\VHABUTWILLIG\mine\srvrrep\DynamicMatrix\DynamicMatrix\obj\Release\DynamicMatrix.MatrixDialog.resources
+C:\Users\VHABUTWILLIG\mine\srvrrep\DynamicMatrix\DynamicMatrix\obj\Release\DynamicMatrix.Properties.Resources.resources
+C:\Users\VHABUTWILLIG\mine\srvrrep\DynamicMatrix\DynamicMatrix\obj\Release\DynamicMatrix.csproj.GenerateResource.cache
+C:\Users\VHABUTWILLIG\mine\srvrrep\DynamicMatrix\DynamicMatrix\obj\Release\DynamicMatrix.csproj.CoreCompileInputs.cache

@@ -1,0 +1,19 @@
+EpicWebService, in order to perform some of it's functions properly, requires
+sharepoint.  Is there a sharepoint instance we can point to in order to test
+EpicWebService?  If not, do we know how to configure an instance of 
+sharepoint that we can use as a test instance?  In the latter case, can we
+get some "live" data that can be used as test data?  Also, we could use
+the exact method of installation on the production servers.
+
+Without the file store, the only way we have to test EpicWebService is to
+use the ResponseServer/GetResponse that accesses the database (which we do
+have a test instance of).  For any major code changes, this limited
+ability to test is somewhat disconcerting.
+
+The CRs we're working on are related to logging.
+In the interest of full disclosure, all functions in EpicWebService use
+the same logging code/path.  So, in terms of logging and email, things 
+appear to work as specified in the CR (310939 and 269943).  However, we
+really need the ability to verify that other aspects of the code are not
+broken by our changes and the we didn't miss something which is very
+difficult given what we know at this moment.

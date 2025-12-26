@@ -1,0 +1,2 @@
+C:\Users\VHABUTWILLIG\mine\ReportViewer2013\obj\Debug\ReportViewer2013.csproj.AssemblyReference.cache
+C:\Users\VHABUTWILLIG\mine\ReportViewer2013\obj\Debug\ReportViewer2013.csproj.CoreCompileInputs.cache

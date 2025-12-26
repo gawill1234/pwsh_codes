@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\VHABUTWILLIG\\mine\\cscstuff\\RdlcProject\\RdlcProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\VHABUTWILLIG\\mine\\cscstuff\\RdlcProject\\RdlcProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VHABUTWILLIG\\mine\\cscstuff\\RdlcProject\\RdlcProject.csproj",
+        "projectName": "RdlcProject",
+        "projectPath": "C:\\Users\\VHABUTWILLIG\\mine\\cscstuff\\RdlcProject\\RdlcProject.csproj",
+        "packagesPath": "C:\\Users\\VHABUTWILLIG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VHABUTWILLIG\\mine\\cscstuff\\RdlcProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VHABUTWILLIG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://devops.ec.va.gov/SharedServices/_packaging/eCMS_Feed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.Reporting": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "BoldReports.Net.Core": {
+              "target": "Package",
+              "version": "[6.2.32, )"
+            },
+            "Microsoft.Report.Viewer": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.ReportViewer.2012.Runtime": {
+              "target": "Package",
+              "version": "[11.0.3452, )"
+            },
+            "Microsoft.ReportViewer.2015.Runtime": {
+              "target": "Package",
+              "version": "[12.0.2.2402, )"
+            },
+            "Microsoft.ReportViewer.Common": {
+              "target": "Package",
+              "version": "[10.0.40219.1, )"
+            },
+            "Microsoft.ReportViewer.Runtime.Common": {
+              "target": "Package",
+              "version": "[12.0.2402.15, )"
+            },
+            "Microsoft.ReportViewer.Runtime.WebForms": {
+              "target": "Package",
+              "version": "[12.0.2402.15, )"
+            },
+            "Microsoft.ReportViewer.WebForms": {
+              "target": "Package",
+              "version": "[10.0.40219.1, )"
+            },
+            "Microsoft.ReportViewer.WinForms": {
+              "target": "Package",
+              "version": "[10.0.40219.1, )"
+            },
+            "Microsoft.ReportViewer.Windows": {
+              "target": "Package",
+              "version": "[11.0.3452, )"
+            },
+            "Microsoft.ReportingServices.ReportViewerControl.WebForms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
+            },
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
+            },
+            "ReportViewerCore.NETCore": {
+              "target": "Package",
+              "version": "[15.1.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

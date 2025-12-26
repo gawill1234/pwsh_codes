@@ -1,0 +1,10 @@
+access1/access1@va.eas.gov
+
+
+ASB up test:
+https://vaww.dev.alpha.ecms.va.gov/esb/api/Vendors/VendorInfo.v21-01?VendorName=General%20Electric
+
+Get rid of "alpha" to test Beta.
+Replace "alpha" with "ifams" for charlie
+
+my entra id:  8107a376-79dc-41af-b640-3219b9b5f564

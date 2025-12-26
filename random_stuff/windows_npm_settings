@@ -1,0 +1,9 @@
+SET PATH=C:\Users\VHABUTWILLIG\AppData\Local\fnm_multishells\13420_1721916832354;C:\Program Files (x86)\VistA\Imaging\;C:\Program Files (x86)\Micro Focus\Reflection\;C:\Program Files\Micro Focus\Reflection\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\1E\Client\Extensibility\NomadBranch;C:\Windows\CCM;C:\Program Files (x86)\HID Global\ActivClient\;C:\Program Files\HID Global\ActivClient\;C:\Program Files\SafeNet\Authentication\SAC\x64;C:\Program Files\SafeNet\Authentication\SAC\x32;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;C:\Program Files\McAfee\Solidcore\Tools\GatherInfo;C:\Program Files\McAfee\Solidcore\Tools\Scanalyzer;C:\Program Files\McAfee\Solidcore\;C:\Program Files\McAfee\Solidcore\Tools\ScGetCerts;C:\Users\VHANHMTARDIM0\AppData\Local\Programs\WinMerge;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\PolicyPak\;C:\Users\VHABUTWILLIG\AppData\Local\Microsoft\WindowsApps;C:\Users\VHABUTWILLIG\AppData\Local\Programs\Git\cmd;C:\Users\VHABUTWILLIG\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;
+SET FNM_ARCH=x64
+SET FNM_COREPACK_ENABLED=false
+SET FNM_LOGLEVEL=info
+SET FNM_NODE_DIST_MIRROR=https://nodejs.org/dist
+SET FNM_VERSION_FILE_STRATEGY=local
+SET FNM_DIR=C:\Users\VHABUTWILLIG\AppData\Roaming\fnm
+SET FNM_MULTISHELL_PATH=C:\Users\VHABUTWILLIG\AppData\Local\fnm_multishells\13420_1721916832354
+SET FNM_RESOLVE_ENGINES=false

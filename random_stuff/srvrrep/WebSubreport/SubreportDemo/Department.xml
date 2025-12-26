@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Department>
+    <DepartmentID>12</DepartmentID>
+    <Name>Document Control</Name>
+  </Department>
+  <Department>
+    <DepartmentID>1</DepartmentID>
+    <Name>Engineering</Name>
+  </Department>
+  <Department>
+    <DepartmentID>16</DepartmentID>
+    <Name>Executive</Name>
+  </Department>
+  <Department>
+    <DepartmentID>14</DepartmentID>
+    <Name>Facilities and Maintenance</Name>
+  </Department>
+  <Department>
+    <DepartmentID>10</DepartmentID>
+    <Name>Finance</Name>
+  </Department>
+  <Department>
+    <DepartmentID>9</DepartmentID>
+    <Name>Human Resources</Name>
+  </Department>
+  <Department>
+    <DepartmentID>11</DepartmentID>
+    <Name>Information Services</Name>
+  </Department>
+  <Department>
+    <DepartmentID>4</DepartmentID>
+    <Name>Marketing</Name>
+  </Department>
+  <Department>
+    <DepartmentID>7</DepartmentID>
+    <Name>Production</Name>
+  </Department>
+  <Department>
+    <DepartmentID>8</DepartmentID>
+    <Name>Production Control</Name>
+  </Department>
+  <Department>
+    <DepartmentID>5</DepartmentID>
+    <Name>Purchasing</Name>
+  </Department>
+  <Department>
+    <DepartmentID>13</DepartmentID>
+    <Name>Quality Assurance</Name>
+  </Department>
+  <Department>
+    <DepartmentID>6</DepartmentID>
+    <Name>Research and Development</Name>
+  </Department>
+  <Department>
+    <DepartmentID>3</DepartmentID>
+    <Name>Sales</Name>
+  </Department>
+  <Department>
+    <DepartmentID>15</DepartmentID>
+    <Name>Shipping and Receiving</Name>
+  </Department>
+  <Department>
+    <DepartmentID>2</DepartmentID>
+    <Name>Tool Design</Name>
+  </Department>
+</DocumentElement>

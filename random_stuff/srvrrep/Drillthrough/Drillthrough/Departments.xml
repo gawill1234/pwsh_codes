@@ -1,0 +1,115 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <table>
+    <DepartmentID>1</DepartmentID>
+    <Name>Engineering</Name>
+    <GroupName>Research and Development</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>3ffd2603-eb6e-43b2-a8ef-c4f5c3064026</rowguid>
+  </table>
+  <table>
+    <DepartmentID>2</DepartmentID>
+    <Name>Tool Design</Name>
+    <GroupName>Research and Development</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>ae948718-d4bf-40e0-8ecd-2d9f4a0b211e</rowguid>
+  </table>
+  <table>
+    <DepartmentID>3</DepartmentID>
+    <Name>Sales</Name>
+    <GroupName>Sales and Marketing</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>702c0ee3-03e6-4f95-9ab8-99f4f25921f3</rowguid>
+  </table>
+  <table>
+    <DepartmentID>4</DepartmentID>
+    <Name>Marketing</Name>
+    <GroupName>Sales and Marketing</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>3e3c4476-b9ec-43cb-aa12-1e7a140a71a4</rowguid>
+  </table>
+  <table>
+    <DepartmentID>5</DepartmentID>
+    <Name>Purchasing</Name>
+    <GroupName>Inventory Management</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>d6c63691-93b5-4f43-ad88-34b6b9a3c4a3</rowguid>
+  </table>
+  <table>
+    <DepartmentID>6</DepartmentID>
+    <Name>Research and Development</Name>
+    <GroupName>Research and Development</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>74739189-8005-4cf5-8f45-61c6957d7c14</rowguid>
+  </table>
+  <table>
+    <DepartmentID>7</DepartmentID>
+    <Name>Production</Name>
+    <GroupName>Manufacturing</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>916b3f2c-9013-48e6-ad38-fb11b4066c55</rowguid>
+  </table>
+  <table>
+    <DepartmentID>8</DepartmentID>
+    <Name>Production Control</Name>
+    <GroupName>Manufacturing</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>15e000f3-1279-46d4-aab0-f2d6c0892d73</rowguid>
+  </table>
+  <table>
+    <DepartmentID>9</DepartmentID>
+    <Name>Human Resources</Name>
+    <GroupName>Executive General and Administration</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>db869011-56e5-4609-877d-a988a81bfa27</rowguid>
+  </table>
+  <table>
+    <DepartmentID>10</DepartmentID>
+    <Name>Finance</Name>
+    <GroupName>Executive General and Administration</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>87520905-09ed-40c0-b89f-a6240177c181</rowguid>
+  </table>
+  <table>
+    <DepartmentID>11</DepartmentID>
+    <Name>Information Services</Name>
+    <GroupName>Executive General and Administration</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>09c7da00-f3d6-4c80-8849-22f2bc141fa7</rowguid>
+  </table>
+  <table>
+    <DepartmentID>12</DepartmentID>
+    <Name>Document Control</Name>
+    <GroupName>Quality Assurance</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>dcd7de5b-3d27-40ef-bd4b-62f0ff261c75</rowguid>
+  </table>
+  <table>
+    <DepartmentID>13</DepartmentID>
+    <Name>Quality Assurance</Name>
+    <GroupName>Quality Assurance</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>ff31aa10-ffd5-4798-a3a5-70983ff943f4</rowguid>
+  </table>
+  <table>
+    <DepartmentID>14</DepartmentID>
+    <Name>Facilities and Maintenance</Name>
+    <GroupName>Executive General and Administration</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>9a6c12e5-c62a-416d-9033-878fec31c021</rowguid>
+  </table>
+  <table>
+    <DepartmentID>15</DepartmentID>
+    <Name>Shipping and Receiving</Name>
+    <GroupName>Inventory Management</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>8d6b534c-c7d6-48b8-8573-2e7500af62c3</rowguid>
+  </table>
+  <table>
+    <DepartmentID>16</DepartmentID>
+    <Name>Executive</Name>
+    <GroupName>Executive General and Administration</GroupName>
+    <ModifiedDate>2002-12-04T09:45:24.8600000-08:00</ModifiedDate>
+    <rowguid>b00c958f-a17e-47dd-a7e2-d5abee2e41eb</rowguid>
+  </table>
+</DocumentElement>

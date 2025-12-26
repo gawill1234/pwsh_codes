@@ -1,0 +1,38 @@
+Reyhan:  separate api testing in other languages
+Justin:  ^^^  and other automation that can be done locally
+Dev mtg:  ^^^  local ci/cd (i.e., just ci).
+          pairing where possible (more than now).
+break up the testing to localize some types
+Preset db for api testing
+
+push button testing
+
+build automation - scripts
+
+
+STUFF THAT IS DONE
+generalized automation for all apps
+   introduced app selection
+   ability to choose repo path (with default)
+reorganized the code so easier to know what is going on
+   cleaned up app, introduced functions
+created installer files for most apps
+determined what a number of the install exceptions might be
+   ebsprofile, ebsadmin, easadmin most specifically
+test install to make sure the work, at least to my iis pools
+Introduced "ASIS" function for each application
+   if you choose ASIS, the git repo will be used as the developer has it
+
+STUFF THAT IS TO BE DONE
+Add ability to choose IIS pool (with default)
+Add "ALL"  select ALL installs all applications
+   This one will have subtasks.  Setting multiple defaults, etc.
+Add ability to install what is already published (no rebuild)
+   Add ability to choose the publish directory
+
+QUESTIONS WE MAY HAVE
+Do we need the ability to run on an OS other than windows?
+Resolve now before we're seriously invested in powershell.
+There will be additional questions.
+   Some will be answerable by discussion with appropriate user.
+   Others will need experimentation.

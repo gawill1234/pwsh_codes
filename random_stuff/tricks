@@ -1,0 +1,3 @@
+Set so powershell can run scripts
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force;
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force;
